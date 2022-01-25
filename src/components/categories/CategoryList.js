@@ -19,7 +19,9 @@ class CategoryList extends Component {
     render() {
         return (
             <div>
-                <Badge color="warning">Category</Badge>
+                <h3>
+                    <Badge color="warning">Category</Badge>
+                </h3>
                 <ListGroup>
                     {this.props.categories.map((category) => (
                         <ListGroupItem

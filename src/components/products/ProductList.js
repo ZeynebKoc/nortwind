@@ -12,10 +12,12 @@ class ProductList extends Component {
     render() {
         return (
             <div>
-                <Badge color="warning">Product</Badge>
-                <Badge color="success">
-                    {this.props.currentCategory.categoryName}
-                </Badge>
+                <h3>
+                    <Badge color="warning">Product</Badge>
+                    <Badge color="success">
+                        {this.props.currentCategory.categoryName}
+                    </Badge>
+                </h3>
                 <Table>
                     <thead>
                         <tr>

@@ -11,8 +11,6 @@ export default class Dashboard extends Component {
                     <Col xs="3">
                         <CategoryList />
                     </Col>
-                </Row>
-                <Row>
                     <Col xs="9">
                         <ProductList />
                     </Col>
