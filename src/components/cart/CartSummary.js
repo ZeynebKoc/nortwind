@@ -13,10 +13,12 @@ import { bindActionCreators } from "redux";
 import * as cartActions from "../../redux/actions/cartActions";
 import alertify from "alertifyjs";
 
+import { Link } from "react-router-dom";
+
 class CartSummary extends Component {
     removeFromCart = (product) => {
         this.props.actions.removeFromCart(product);
-        alertify.warning(product.productName + " remove from cart!", 2);
+        alertify.error(product.productName + " remove from cart!", 2);
     };
     renderEmpty() {
         return (
@@ -52,7 +54,9 @@ class CartSummary extends Component {
                             </DropdownItem>
                         ))}
                         <DropdownItem divider />
-                        <DropdownItem>Go to cart</DropdownItem>
+                        <DropdownItem>
+                            <Link to={"/cart"}>Go to cart</Link>
+                        </DropdownItem>
                     </DropdownMenu>
                 </UncontrolledDropdown>
             </div>
