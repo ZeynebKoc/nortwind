@@ -4,6 +4,7 @@ import { Container } from "reactstrap";
 import Navi from "../navi/Navi";
 import Dashboard from "./Dashboard";
 import CartDetail from "../cart/CartDetail";
+import AddOrUpdateProduct from "../products/AddOrUpdateProduct";
 
 function App() {
     return (
@@ -14,6 +15,10 @@ function App() {
                     <Route exact path="/" component={Dashboard} />
                     <Route path="/product" component={Dashboard} />
                     <Route path="/cart" component={CartDetail} />
+                    <Route
+                        path="/saveProduct/:productId"
+                        component={AddOrUpdateProduct}
+                    />
                 </Switch>
             </Container>
         </div>
