@@ -37,7 +37,10 @@ function AddOrUpdateProduct({
     }
     return (
         <ProductDetail>
-            onChange={handleChange} onSave={handleSave}
+            product={product}
+            categories= {categories}
+            onChange={handleChange}
+            onSave={handleSave}
         </ProductDetail>
     );
 }
