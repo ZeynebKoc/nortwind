@@ -16,7 +16,7 @@ export default class Navi extends Component {
         return (
             <div>
                 <Navbar color="light" expand="md" light>
-                    <NavbarBrand href="/">reactstrap</NavbarBrand>
+                    <NavbarBrand href="/">Northwind</NavbarBrand>
                     <NavbarToggler onClick={function noRefCheck() {}} />
                     <Collapse navbar>
                         <Nav className="me-auto" navbar>
