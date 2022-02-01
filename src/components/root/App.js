@@ -5,7 +5,7 @@ import Navi from "../navi/Navi";
 import Dashboard from "./Dashboard";
 import CartDetail from "../cart/CartDetail";
 import AddOrUpdateProduct from "../products/AddOrUpdateProduct";
-
+import NotFound from "../common/NotFound";
 function App() {
     return (
         <div>
@@ -20,6 +20,7 @@ function App() {
                         component={AddOrUpdateProduct}
                     />
                     <Route path="/saveproduct" component={AddOrUpdateProduct} />
+                    <Route component={NotFound} />
                 </Switch>
             </Container>
         </div>
