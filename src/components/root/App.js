@@ -19,6 +19,7 @@ function App() {
                         path="/saveproduct/:productId"
                         component={AddOrUpdateProduct}
                     />
+                    <Route path="/saveproduct" component={AddOrUpdateProduct} />
                 </Switch>
             </Container>
         </div>
